@@ -1,0 +1,141 @@
+.grid_12 {
+  width: 100%;
+  float: left; }
+
+.grid_11 {
+  width: 91.666%;
+  float: left; }
+
+.grid_10 {
+  width: 83.333%;
+  float: left; }
+
+.grid_9 {
+  width: 75%;
+  float: left; }
+
+.grid_8 {
+  width: 66.666%;
+  float: left; }
+
+.grid_7 {
+  width: 58.333%;
+  float: left; }
+
+.grid_6 {
+  width: 50%;
+  float: left; }
+
+.grid_5 {
+  width: 41.666%;
+  float: left; }
+
+.grid_4 {
+  width: 33.333%;
+  float: left; }
+
+.grid_3 {
+  width: 25%;
+  float: left; }
+
+.grid_2 {
+  width: 16.666%;
+  float: left; }
+
+.grid_1 {
+  width: 8.333%;
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.clearfx:after {
+  content: ' ';
+  display: block;
+  clear: both; }
+
+.clear {
+  clear: both; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Raleway;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: block;
+  width: 100%; }
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  font-size: 3em; }
+
+footer {
+  clear: both; }
+
+h1, h2 {
+  padding: 0 .5em; }
+
+.header {
+  padding: 1em;
+  background-color: orange;
+  color: #FFF;
+  text-align: left; }
+
+.baseContainer {
+  padding: 1em;
+  color: #454545;
+  text-align: left; }
+
+.primeHeading {
+  text-align: left;
+  color: #FFF;
+  display: inline-block;
+  font-size: 3.8em;
+  display: inline-block; }
+
+.nav li {
+  display: inline-block;
+  padding: 0.5em 2em; }
+
+/*# sourceMappingURL=guide.css.map */

@@ -1,0 +1,14 @@
+.index {
+  @extend .grid_2;
+  position: absolute;
+  top: 5.8em;
+  left: 0;
+  bottom: 0;
+}
+
+.guideContent {
+  position: absolute;
+  top: 5.8em;
+  left: 16.666%;
+
+}

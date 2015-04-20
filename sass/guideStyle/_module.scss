@@ -1,0 +1,40 @@
+.header {
+  @include contentBox(1em, left, $guidePrimaryColor, $white);
+}
+
+.baseContainer{
+  @include contentBox(1em, left, null, $gray);
+}
+
+.primeHeading {
+  @include headingStyle(null, left, null, $white, 3.8em);
+  display: inline-block;
+}
+
+.guideHeading {
+  margin-bottom: 1em;
+}
+
+.index {
+  padding-top: 3em;
+  background-color: $lightGray;
+}
+
+.indexNav {
+  li {
+    color: $white;
+    padding: .5em;
+  }
+}
+
+.guideContent {
+  padding: 3em;
+}
+
+.codeBlock {
+  @include contentBox(1em, left, $lightGray, $white);
+}
+
+.nav {
+  @include navList(inline-block, null, 2em, .5em);
+}

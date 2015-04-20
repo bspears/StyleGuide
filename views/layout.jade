@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/app.css')
+    link(rel='stylesheet', href='/stylesheets/guide.css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:400,700', rel='stylesheet', type='text/css')
+  body
+    header.header
+      h1.primeHeading Style Guide
+      ul.nav.floatRight
+        li
+          a(href='/') Docs
+        li
+          a(href='/test') GitHub
+    main.baseContainer
+      section.index
+        ul.indexNav
+          li
+            a(href="/base") Base
+          li
+            a(href="/typography") Typography
+          li
+            a(href="/boxes") Boxes
+          li
+            a(href="/buttons") Buttons
+          li
+            a(href="/nav") Nav
+          li
+            a(href="/interactions") Interactions
+      block content
