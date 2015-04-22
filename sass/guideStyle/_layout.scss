@@ -4,11 +4,19 @@
   top: 5.8em;
   left: 0;
   bottom: 0;
+  overflow: scroll;
 }
 
 .guideContent {
   position: absolute;
   top: 5.8em;
   left: 16.666%;
+  bottom: 0;
+  overflow: scroll;
+}
 
+.logo {
+  height: 5.8em;
+  padding: 1.5em 1em;
+  background-color: $white;
 }

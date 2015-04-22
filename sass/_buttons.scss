@@ -1,47 +1,7 @@
-.container {
-  @include contentBox(5% 10%);
-}
-
-.bgPrimary {
-  background-color: $primaryColor;
-}
-
-.bgAccent {
-  background-color: $accentColor;
-  color: $white;
-}
-
-.bgLightGray {
-  background-color: $lightGray;
-}
-
-.bgGray {
-  background-color: $gray;
-  color: $white;
-}
-
-.shadowContainer {
-  position: relative;
-}
-
-.shadow {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  background-color: $black;
-  &:hover {
-    opacity: .8;
-    cursor: pointer;
-  }
-}
-
-
-
 //Buttons
 
+
+//button templates
 %button {
   color: $white;
   border-radius: 3px;
@@ -64,6 +24,8 @@
   padding: .2em;
 }
 
+
+//button classes
 .primaryLarge {
   @extend %largeButton;
   background-color: $primaryColor;
@@ -84,19 +46,4 @@
 .accentSmall {
   @extend %smallButton;
   background-color: $accentColor;
-}
-
-//nav
-
-.mainNav {
-  @extend .grid_7;
-  li {
-    font-size: 1rem;
-    display: inline-block;
-    padding: 2em;
-    &:hover {
-      color: $primaryColor;
-      transition: .5s;
-    }
-  }
 }

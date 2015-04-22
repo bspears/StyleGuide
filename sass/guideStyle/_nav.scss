@@ -1,0 +1,13 @@
+.indexNav {
+  li {
+    color: $white;
+    padding: .5em;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.nav {
+  @include navList(inline-block, null, 2em, .5em);
+}

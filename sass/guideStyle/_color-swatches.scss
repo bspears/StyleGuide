@@ -1,0 +1,62 @@
+.swatchList {
+  li {
+    display: inline-block;
+    padding: 1em;
+  }
+}
+
+//color swatch template
+%colorSwatch {
+  color: $white;
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  margin: 0;
+}
+
+//colors
+.primarySwatch {
+  @extend %colorSwatch;
+  background-color: $guidePrimaryColor;
+}
+
+.primaryDarkSwatch {
+  @extend %colorSwatch;
+  background-color: $primaryDark;
+}
+
+.accentSwatch {
+  @extend %colorSwatch;
+  background-color: $guideAccentColor;
+}
+
+.accentDarkSwatch {
+  @extend %colorSwatch;
+  background-color: $accentDark;
+}
+
+.graySwatch {
+  @extend %colorSwatch;
+  background-color: $guideGray;
+}
+
+.lightGraySwatch {
+  @extend %colorSwatch;
+  background-color: $lightGray;
+}
+
+.darkGraySwatch {
+  @extend %colorSwatch;
+  background-color: $darkGray;
+}
+
+.blackSwatch {
+  @extend %colorSwatch;
+  background-color: $black;
+}
+
+.whiteSwatch {
+  @extend %colorSwatch;
+  background-color: $white;
+  border: 1px solid $gray;
+}

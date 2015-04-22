@@ -1,9 +1,18 @@
+//guide font
 $primaryText: 'Raleway', sans-serif;
 
-$guidePrimaryColor: #E72; //Orange
-
+//base colors
 $gray: #454545;
 $white: #FFF;
 $black: #000;
 
-$lightGray: lighten($gray, 20%);
+//color palette for the style guide
+$guidePrimaryColor: #E72; //Orange
+$guideAccentColor: #059; //blue
+$guideGray: #717174;
+
+//Modified colors
+$darkGray: darken($guideGray, 10%) ;
+$lightGray: #F3F3F3;
+$primaryDark: darken($guidePrimaryColor, 7.2%);
+$accentDark: darken($guideAccentColor, 7.2%);

@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  section.guideContent
+    h1.guideHeading Grid
+    p To apply a grid value to an element, add the desired class as listed in the table below. The element will then take up the appropriate width of its parent container. It is also important to note that any element with a grid class will behave as a floated element.
+    h2.guideHeading Grid classes
+    div.example.clearfx
+      p.container.bgAccent.full.tCentered .full
+      p.container.bgAccent.half.tCentered .half
+      p.container.bgGray.half.tCentered .half
+      p.container.bgAccent.third.tCentered .third
+      p.container.bgGray.third.tCentered .third
+      p.container.bgAccent.third.tCentered .third
+      p.container.bgAccent.quarter.tCentered .quarter
+      p.container.bgGray.quarter.tCentered .quarter
+      p.container.bgAccent.quarter.tCentered .quarter
+      p.container.bgGray.quarter.tCentered .quarter
+    pre.codeBlock.
+    h2.guideHeading Positioning
+    p The natural behavior of a grid item is to float left, to change this, the position classes below can be added to the element with the grid class.
+    div.example.clearfx
+      p Center Align
+      p.container.bgGray.half.tCentered.center .center
+      p Right Align
+      p.container.bgGray.half.tCentered.right .right
+
+

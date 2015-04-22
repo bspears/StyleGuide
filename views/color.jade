@@ -1,0 +1,57 @@
+extends layout
+
+block content
+  section.guideContent
+    h1.guideHeading Color
+    h2.guideHeading Main Color Palette
+    p The color values defined below should be the only colors used for the site.
+    div.example
+      ul.swatchList
+        li
+          div.primarySwatch
+          p.code Primary color
+          p.code #E72
+          p Variable name: $primaryColor
+        li
+          div.accentSwatch
+          p.code Accent Color
+          p.code #059
+          p Variable name: $accentColor
+        li
+          div.graySwatch
+          p.code Gray
+          p.code #717174
+          p Variable name: $gray
+        li
+          div.blackSwatch
+          p.code Black
+          p.code #000
+          p Variable name: $black
+        li
+          div.whiteSwatch
+          p.code white
+          p.code #FFF
+          p Variable name: $white
+    h2.guideHeading Modified Colors
+    div.example
+      ul.swatchList
+        li
+          div.primaryDarkSwatch
+          p.code Darker Primary color
+          p.code #DA6511
+          p Variable name: $primaryDark
+        li
+          div.accentDarkSwatch
+          p.code Darker Accent Color
+          p.code #004174
+          p Variable name: $accentDark
+        li
+          div.darkGraySwatch
+          p.code Darker Gray
+          p.code #58585A
+          p Variable name: $darkGray
+        li
+          div.lightGraySwatch
+          p.code Lighter Gray
+          p.code #F3F3F3
+          p Variable name: $lightGray

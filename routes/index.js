@@ -34,6 +34,14 @@ router.get('/interactions', function(req, res, next){
   res.render('interactions', { title: 'Style Guide: Interactions'})
 });
 
+router.get('/grid', function(req, res, next){
+  res.render('grid', { title: 'Style Guide: Grid'})
+});
+
+router.get('/color', function(req, res, next){
+  res.render('color', { title: 'Style Guide: Color'})
+});
+
 
 
 module.exports = router;

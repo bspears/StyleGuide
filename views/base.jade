@@ -3,6 +3,25 @@ extends layout
 block content
   section.guideContent
     h1.guideHeading Base
-    p Description of style Description of style Description of style Description of style Description of style Description of style Description of style Description of style Description of style Description of style Description of style Description of style Description of style Description of style
+    a(name="reset")
+    h2.guideHeading Reset
+    p This site uses the Meyerweb reset to clear the standard browser settings, and start with a clean base format.
     div.codeBlock
-      p .sample { code: block; }
+      p link
+        a(href='http://meyerweb.com/eric/tools/css/reset/')   http://meyerweb.com/eric/tools/css/reset/
+    a(name="boxsizing")
+    h2.guideHeading Box Sizing
+    p All box-sizing is set to border-box inside the reset file.
+    a(name="modifications")
+    h2.guideHeading Modifications
+    p There are some additions to the original reset. The following rules should be declared:
+    pre.codeBlock.
+      ol, ul, li {
+        list-style: none;
+      }
+
+      img {
+        display: block;width: 100%;
+      }
+  script(src='javascripts/main.js')
+

@@ -1,7 +1,27 @@
-@font-face {
-  font-family: Cabin;
-  src: url(../fonts/cabin/Cabin-Regular.otf);
-}
-
 
 $primaryText: 'Raleway', sans-serif;
+
+h1 {
+  font-size: 2.7em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.tCentered {
+  text-align: center;
+}
+
+.tLeft {
+  text-align: left;
+}
+.tRight {
+  text-align: right;
+}

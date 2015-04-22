@@ -2,5 +2,17 @@ extends layout
 
 block content
   section.guideContent
-    h1 Base
-    p Description of style
+    h1.guideHeading Interactions
+    h2.guideHeading Hover Shadow
+    div.example
+      p For use on images that can be clicked on as a link, or to enlarge.
+      div.shadowContainer
+        div.container.bgLightGray
+          p Content in the shadow container
+          span.shadow shadow
+    pre.codeBlock.
+      The image will need to be wrapped in a parent container with the class of .shadowContainer. Then a span with the class of .shadow will need to be a direct child of that container to get the desired effect.
+      &lt;section class="shadowContainer"&gt;
+        &lt;span class="shadow"&gt;&lt;/span&gt;
+        &lt;img href="#"&gt;
+      &lt;/section&gt;

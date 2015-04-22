@@ -2,5 +2,41 @@ extends layout
 
 block content
   section.guideContent
-    h1 Base
-    p Description of style
+    h1.guideHeading Typography
+    h2.guideHeading Headings
+    p Heading tags should be used to define
+      strong  importance only
+      | . h1 being the most important. Any styling should be done through the use of additional classes. There may be multiple h1 tags on a page, but only one per section or article. Heading tags should
+      strong  NOT
+      |  be used as a styling tool to achieve a larger font size.
+    div.example
+      p
+        h1 Heading 1
+      p
+        h2 Heading 2
+      p
+        h3 Heading 3
+    pre.codeBlock.
+      &lt;h1&gt;Heading 1&lt;/h1&gt;
+      &lt;h2&gt;Heading 2&lt;/h2&gt;
+      &lt;h3&gt;Heading 3&lt;/h3&gt;
+    h2.guideHeading Text
+    p Paragraphs should be separated by the &lt;p&gt; tag, there should be no use of a &lt;br&gt; tag to separate text.
+    div.example
+      p Williamsburg disrupt lomo, church-key PBR&B McSweeney's cred literally banh mi kogi banjo umami mustache meggings. Messenger bag gastropub authentic slow-carb, mlkshk skateboard craft beer Tumblr brunch wayfarers YOLO Portland food truck umami fanny pack.
+      p Taxidermy umami 90's pickled craft beer. Mixtape Odd Future pop-up butcher. Next level four dollar toast meh salvia, flexitarian gastropub chambray you probably haven't heard of them ethical Pitchfork forage food truck farm-to-table High Life Brooklyn. Wolf meh salvia biodiesel quinoa forage. Kogi cardigan Tumblr, selvage meditation pug sriracha lo-fi direct trade.&lt;/p&gt;
+    pre.codeBlock.
+      &lt;p&gt; Williamsburg disrupt lomo, church-key PBR&B McSweeney's cred literally banh mi kogi banjo umami mustache meggings. Messenger bag gastropub authentic slow-carb, mlkshk skateboard craft beer Tumblr brunch wayfarers YOLO Portland food truck umami fanny pack.&lt;/p&gt;
+      &lt;p&gt; Taxidermy umami 90's pickled craft beer. Mixtape Odd Future pop-up butcher. Next level four dollar toast meh salvia, flexitarian gastropub chambray you probably haven't heard of them ethical Pitchfork forage food truck farm-to-table High Life Brooklyn. Wolf meh salvia biodiesel quinoa forage. Kogi cardigan Tumblr, selvage meditation pug sriracha lo-fi direct trade.&lt;/p&gt;
+    h2.guideHeading Bold
+    div.example
+      p Make something
+        strong  stand out.
+    pre.codeBlock.
+      &lt;p&gt;Make something &lt;strong&gt;stand out.&lt;/strong&gt;
+    h2.guideHeading Emphasis
+    div.example
+      p Give something
+        em  emphasis.
+    pre.codeBlock.
+      &lt;p&gt;Give something &lt;em&gt;emphasis.&lt;/em&gt;

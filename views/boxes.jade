@@ -2,5 +2,77 @@ extends layout
 
 block content
   section.guideContent
-    h1 Base
-    p Description of style
+    h1.guideHeading Boxes
+    h2.guideHeading Containers
+    p The
+      strong  .container
+      |  class should be used any time a new section is being created. This will provide the proper side margins for the content. This should not be used on the &lt;body&gt; tag or on a &lt;main&gt; tag.
+    div.example
+      div.colorBlock.container
+        p Document
+        div.colorBlock2.container
+          p Content in a div with the class of .container
+    pre.codeBlock.
+      &lt;body&gt;
+        &lt;section class="container"&gt;
+          &lt;p&gt; Content in a div with the class of .container &lt;/p&gt;
+        &lt;/section&gt;
+      &lt;/body&gt;
+    h2.guideHeading Colored Sections
+    div.example
+      div.container
+        p Default Style
+      div.container.bgPrimary
+        p Primary Color
+      div.container.bgLightGray
+        p Light-Gray Color
+      div.container.bgGray
+        p Gray Color
+    pre.codeBlock.
+      The following classes can be added to a container to achieve the effect above:
+      code Primary Color:
+        class="bgPrimary"
+      Light-Gray Color:
+        class="bgLightGray"
+      Gray Color:
+        class="bgGray"
+    h2.guideHeading Text Align
+    div.example
+      div.container.bgLightGray.tCentered
+        h2 Centered Text
+        p.code Centered Text Centered Text Centered Text Centered Text Centered Text Centered
+        p Text Centered Text Centered Text Centered Text Centered Text
+      div.container.bgLightGray.tLeft
+        h2 Left Aligned
+        p.code Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned
+        p.code Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned
+      div.container.bgLightGray.tRight
+        h2 Right Aligned
+        p.code right aligned right aligned right aligned right aligned right aligned right aligned right aligned right aligned right aligned
+        p right aligned right aligned right aligned right aligned right aligned right aligned right aligned
+    pre.codeBlock.
+      To change the text alignment of a container, add the appropriate class below:
+      code Center Aligned:
+        class="tCentered"
+      code Left Aligned:
+        class="tLeft"
+      code Right Aligned:
+        class="tRight"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

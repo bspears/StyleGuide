@@ -1,0 +1,24 @@
+.half {
+  @extend .grid_6;
+}
+
+.full {
+  @extend .grid_12;
+}
+
+.third {
+  @extend .grid_4;
+}
+
+.quarter {
+  @extend .grid_3;
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
+}
+
+.right {
+  float: right;
+}

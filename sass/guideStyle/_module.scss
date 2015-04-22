@@ -1,3 +1,5 @@
+
+//boxes
 .header {
   @include contentBox(1em, left, $guidePrimaryColor, $white);
 }
@@ -11,30 +13,36 @@
   display: inline-block;
 }
 
-.guideHeading {
-  margin-bottom: 1em;
+.guideContent {
+  @extend .grid_9;
+  padding: 3em;
+}
+
+.example {
+  @include contentBox(1em, left, $white, $gray);
+  border: 1px solid $lightGray;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.codeBlock {
+  @include contentBox(1em, left, $guideGray, $white);
+  margin-bottom: 1.5em;
+  overflow: scroll;
 }
 
 .index {
   padding-top: 3em;
-  background-color: $lightGray;
+  background-color: $guideGray;
 }
 
-.indexNav {
-  li {
-    color: $white;
-    padding: .5em;
-  }
+.colorBlock {
+  width: 100%;
+  background-color: $guidePrimaryColor;
 }
 
-.guideContent {
-  padding: 3em;
+.colorBlock2 {
+  @extends .colorBlock;
+  background-color: $guideGray;
+  color: $white;
 }
 
-.codeBlock {
-  @include contentBox(1em, left, $lightGray, $white);
-}
-
-.nav {
-  @include navList(inline-block, null, 2em, .5em);
-}

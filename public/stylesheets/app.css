@@ -1,4 +1,4 @@
-.grid_12 {
+.grid_12, .full {
   width: 100%;
   float: left; }
 
@@ -18,11 +18,11 @@
   width: 66.666%;
   float: left; }
 
-.grid_7 {
+.grid_7, .mainNav {
   width: 58.333%;
   float: left; }
 
-.grid_6 {
+.grid_6, .half {
   width: 50%;
   float: left; }
 
@@ -30,11 +30,11 @@
   width: 41.666%;
   float: left; }
 
-.grid_4 {
+.grid_4, .third {
   width: 33.333%;
   float: left; }
 
-.grid_3 {
+.grid_3, .quarter {
   width: 25%;
   float: left; }
 
@@ -57,6 +57,26 @@
 .clear {
   clear: both; }
 
+h1 {
+  font-size: 2.7em; }
+
+h2 {
+  font-size: 1.6em; }
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em; }
+
+.tCentered {
+  text-align: center; }
+
+.tLeft {
+  text-align: left; }
+
+.tRight {
+  text-align: right; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -74,7 +94,7 @@ menu, nav, section {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: inherit;
+  font-family: 'Noto Sans', sans-serif;
   vertical-align: baseline;
   text-decoration: none;
   color: inherit; }
@@ -116,8 +136,113 @@ footer {
 h1, h2 {
   padding: 0 .5em; }
 
-@font-face {
-  font-family: Cabin;
-  src: url(../fonts/cabin/Cabin-Regular.otf); }
+.container {
+  padding: 5% 10%; }
+
+.bgPrimary {
+  background-color: #E72; }
+
+.bgAccent {
+  background-color: #059;
+  color: #FFF; }
+
+.bgLightGray {
+  background-color: #F3F3F3; }
+
+.bgGray {
+  background-color: #717174;
+  color: #FFF; }
+
+.shadowContainer {
+  position: relative; }
+
+.shadow {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: #000; }
+  .shadow:hover {
+    opacity: .8;
+    cursor: pointer; }
+
+.primaryLarge, .accentLarge, .primarySmall, .accentSmall {
+  color: #FFF;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 5px 15px 0;
+  text-align: center;
+  font-weight: bold; }
+
+.primaryLarge, .accentLarge {
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em; }
+
+.primarySmall, .accentSmall {
+  border: none;
+  padding: .2em; }
+
+.primaryLarge {
+  background-color: #E72;
+  border-bottom: 3px solid #da6511; }
+
+.accentLarge {
+  background-color: #059;
+  border-bottom: 3px solid #004174; }
+
+.primarySmall {
+  background-color: #E72; }
+
+.accentSmall {
+  background-color: #059; }
+
+.mainNav li {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 2em; }
+  .mainNav li:hover {
+    color: #E72;
+    transition: .5s; }
+
+.primaryLarge, .accentLarge, .primarySmall, .accentSmall {
+  color: #FFF;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 5px 15px 0;
+  text-align: center;
+  font-weight: bold; }
+
+.primaryLarge, .accentLarge {
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em; }
+
+.primarySmall, .accentSmall {
+  border: none;
+  padding: .2em; }
+
+.primaryLarge {
+  background-color: #E72;
+  border-bottom: 3px solid #da6511; }
+
+.accentLarge {
+  background-color: #059;
+  border-bottom: 3px solid #004174; }
+
+.primarySmall {
+  background-color: #E72; }
+
+.accentSmall {
+  background-color: #059; }
+
+.center {
+  float: none;
+  margin: 0 auto; }
+
+.right {
+  float: right; }
 
 /*# sourceMappingURL=app.css.map */

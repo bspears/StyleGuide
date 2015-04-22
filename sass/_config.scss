@@ -1,11 +1,15 @@
 // $primaryText:
 
+//color palette
 $primaryColor: #E72 ; //Orange
 $accentColor: #059 ; //blue
-
-
-$gray: #454545;
+$gray: #717174;
 $white: #FFF;
 $black: #000;
 
-$darkGray: darken($gray, 1%) ;
+
+//modified colors
+$darkGray: darken($gray, 10%) ;
+$lightGray: #F3F3F3;
+$primaryDark: darken($primaryColor, 7.2%);
+$accentDark: darken($accentColor, 7.2%);

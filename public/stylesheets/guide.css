@@ -10,7 +10,7 @@
   width: 83.333%;
   float: left; }
 
-.grid_9 {
+.grid_9, .guideContent {
   width: 75%;
   float: left; }
 
@@ -119,6 +119,16 @@ p {
   line-height: 1.5em;
   margin-bottom: 1em; }
 
+pre {
+  line-height: 1.5em; }
+
+.guideHeading {
+  margin-bottom: 1em; }
+
+.code {
+  line-height: 1.2em;
+  margin: 0; }
+
 .header {
   padding: 1em;
   background-color: #E72;
@@ -137,39 +147,104 @@ p {
   font-size: 3.8em;
   display: inline-block; }
 
-.guideHeading {
-  margin-bottom: 1em; }
+.guideContent {
+  padding: 3em; }
+
+.example {
+  padding: 1em;
+  background-color: #FFF;
+  color: #454545;
+  text-align: left;
+  border: 1px solid #F3F3F3;
+  font-family: 'Noto Sans', sans-serif; }
+
+.codeBlock {
+  padding: 1em;
+  background-color: #717174;
+  color: #FFF;
+  text-align: left;
+  margin-bottom: 1.5em;
+  overflow: scroll; }
 
 .index {
   padding-top: 3em;
-  background-color: #787878; }
+  background-color: #717174; }
+
+.colorBlock {
+  width: 100%;
+  background-color: #E72; }
+
+.colorBlock2 {
+  @extends .colorBlock;
+  background-color: #717174;
+  color: #FFF; }
 
 .indexNav li {
   color: #FFF;
   padding: .5em; }
-
-.guideContent {
-  padding: 3em; }
-
-.codeBlock {
-  padding: 1em;
-  background-color: #787878;
-  color: #FFF;
-  text-align: left; }
+  .indexNav li:hover {
+    color: #000; }
 
 .nav li {
   display: inline-block;
   padding: 0.5em 2em; }
 
+.swatchList li {
+  display: inline-block;
+  padding: 1em; }
+
+.primarySwatch, .primaryDarkSwatch, .accentSwatch, .accentDarkSwatch, .graySwatch, .lightGraySwatch, .darkGraySwatch, .blackSwatch, .whiteSwatch {
+  color: #FFF;
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  margin: 0; }
+
+.primarySwatch {
+  background-color: #E72; }
+
+.primaryDarkSwatch {
+  background-color: #da6511; }
+
+.accentSwatch {
+  background-color: #059; }
+
+.accentDarkSwatch {
+  background-color: #004174; }
+
+.graySwatch {
+  background-color: #717174; }
+
+.lightGraySwatch {
+  background-color: #F3F3F3; }
+
+.darkGraySwatch {
+  background-color: #58585a; }
+
+.blackSwatch {
+  background-color: #000; }
+
+.whiteSwatch {
+  background-color: #FFF;
+  border: 1px solid #454545; }
+
 .index {
   position: absolute;
   top: 5.8em;
   left: 0;
-  bottom: 0; }
+  bottom: 0;
+  overflow: scroll; }
 
 .guideContent {
   position: absolute;
   top: 5.8em;
-  left: 16.666%; }
+  left: 16.666%;
+  bottom: 0;
+  overflow: scroll; }
+
+.logo {
+  height: 5.8em;
+  padding: 1.5em 1em;
+  background-color: #FFF; }
 
 /*# sourceMappingURL=guide.css.map */

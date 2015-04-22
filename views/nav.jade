@@ -2,5 +2,20 @@ extends layout
 
 block content
   section.guideContent
-    h1 Base
-    p Description of style
+    h1.guideHeading Nav
+    h2.guideHeading Main Nav
+    div.example.clearfx
+      ul.mainNav
+        li
+          a(href="") Link 1
+        li
+          a(href="") Link2
+        li
+          a(href="") Link 3
+    pre.codeBlock.
+      &lt;nav class="mainNav"&gt;
+        &lt;li&gt; &lt;a href="#"&gt;Link 1&lt;/a&gt;
+        &lt;li&gt; &lt;a href="#"&gt;Link 2&lt;/a&gt;
+        &lt;li&gt; &lt;a href="#"&gt;Link 3&lt;/a&gt;
+      &lt;/nav&gt;
+
