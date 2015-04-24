@@ -1,5 +1,6 @@
 .swatchList {
   li {
+    @extend .grid_4;
     display: inline-block;
     padding: 1em;
   }
@@ -12,6 +13,7 @@
   width: 10em;
   height: 10em;
   margin: 0;
+  border-radius: 20px;
 }
 
 //colors
@@ -43,6 +45,7 @@
 .lightGraySwatch {
   @extend %colorSwatch;
   background-color: $lightGray;
+  border: 1px solid $gray;
 }
 
 .darkGraySwatch {

@@ -10,7 +10,8 @@ html
 
   body
     div.grid_2.logo
-      img(class="grid_11" src="images/yapta_logo.png")
+      a(href="/")
+        img(class="grid_11" src="images/yapta_logo.png")
     header.header.grid_10
       h1.primeHeading Style Guide
       ul.nav.floatRight
@@ -18,6 +19,8 @@ html
           a(href='/') Docs
         li
           a(href='https://github.com/bspears/StyleGuide') GitHub
+        li
+          a(href="http://www.yapta.com") Yapta
     main.baseContainer
       section.index
         ul.indexNav#indexNav
@@ -37,5 +40,7 @@ html
             a(href="/grid") Grid
           li
             a(href="/color") Color
+          li
+            a(href="/standards") Standards
       block content
     link(href='/javascripts/main.js')

@@ -2,13 +2,22 @@ extends layout
 
 block content
   section.guideContent
+    nav.nav.pageNav
+      ul
+        li
+          a(href="#containers") Containers
+        li
+          a(href="#colors") Colored Sections
+        li
+          a(href="#align") Alignment
     h1.guideHeading Boxes
+    a(name="containers")
     h2.guideHeading Containers
     p The
       strong  .container
       |  class should be used any time a new section is being created. This will provide the proper side margins for the content. This should not be used on the &lt;body&gt; tag or on a &lt;main&gt; tag.
     div.example
-      div.colorBlock.container
+      div.colorBlock
         p Document
         div.colorBlock2.container
           p Content in a div with the class of .container
@@ -18,9 +27,10 @@ block content
           &lt;p&gt; Content in a div with the class of .container &lt;/p&gt;
         &lt;/section&gt;
       &lt;/body&gt;
+    a(name="colors")
     h2.guideHeading Colored Sections
     div.example
-      div.container
+      div.container.bgWhite
         p Default Style
       div.container.bgPrimary
         p Primary Color
@@ -36,19 +46,20 @@ block content
         class="bgLightGray"
       Gray Color:
         class="bgGray"
+    a(name="align")
     h2.guideHeading Text Align
     div.example
       div.container.bgLightGray.tCentered
-        h2 Centered Text
-        p.code Centered Text Centered Text Centered Text Centered Text Centered Text Centered
+        h2.guideHeading Centered Text
+        p Centered Text Centered Text Centered Text Centered Text Centered Text Centered
         p Text Centered Text Centered Text Centered Text Centered Text
       div.container.bgLightGray.tLeft
-        h2 Left Aligned
-        p.code Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned
-        p.code Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned
+        h2.guideHeading Left Aligned
+        p Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned
+        p Left aligned Left aligned Left aligned Left aligned Left aligned Left aligned
       div.container.bgLightGray.tRight
-        h2 Right Aligned
-        p.code right aligned right aligned right aligned right aligned right aligned right aligned right aligned right aligned right aligned
+        h2.guideHeading  Right Aligned
+        p right aligned right aligned right aligned right aligned right aligned right aligned right aligned right aligned right aligned
         p right aligned right aligned right aligned right aligned right aligned right aligned right aligned
     pre.codeBlock.
       To change the text alignment of a container, add the appropriate class below:

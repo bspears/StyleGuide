@@ -1,5 +1,5 @@
 
-//boxes
+//container boxes
 .header {
   @include contentBox(1em, left, $guidePrimaryColor, $white);
 }
@@ -19,7 +19,7 @@
 }
 
 .example {
-  @include contentBox(1em, left, $white, $gray);
+  @include contentBox(1em, left, $lightGray, $gray);
   border: 1px solid $lightGray;
   font-family: 'Noto Sans', sans-serif;
 }
@@ -36,6 +36,8 @@
 }
 
 .colorBlock {
+  color: $white;
+  padding: 5em 0;
   width: 100%;
   background-color: $guidePrimaryColor;
 }

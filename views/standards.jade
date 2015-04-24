@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  section.guideContent
+    nav.nav.pageNav
+      ul
+        li
+          a(href="#html") HTML
+        li
+          a(href="#css") CSS
+    h1.guideHeading Standards
+    p To maintain consistency, please follow these guidelines when writing HTML and CSS.
+    a(name="html")
+    h2.guideHeading HTML
+    h3.guideHeading General
+    ul.bulletList
+      li All code should be written using 2 spaces for indents, and no tabs. If possible, configure your tab key to use 2 spaces.
+      li All elements should be properly nested with the correct amount of indents.
+      li When defining an attribute value, double quotes should be used, please do not use singe quotes.
+    h3.guideHeading Semantics
+    ul.bulletList
+      li HTML tags should be used for their intended meaning, paragraphs should be in a &lt;p&gt; tag, forms should be in a &lt;form&gt; tag and so on.
+      li HTML tags should not be used for any styling purposes, no &lt;br&gt; tags for spacing or using heading tags for the purpose of larger font size.
+      li If an appropriate tag exists, use it. &lt;div&gt; tags should only be used if there are no other tags that will accurately describe the contents of the element. In which case there should be a "role" attribute assigned to the &lt;div&gt; to give it a meaning if possible.
+    h3.guideHeading Naming Conventions
+    ul.bulletList
+      li When naming a class or ID, use camel case formatting. The first letter is always lower case, if there is more than one word in the name, the first letter of the new word is a capitol. For example, a class for list that needs to have bullets could be named "bulletlist". You know exactly what this class should do just by its name
+        strong  Example: thisIsCamelCased.
+      li Names should be descriptive of the element they are used for. There should be no class or ID names such as (class='x'). For example, a list that needs to have bullets for each list item could have a class name of "bulletList". You know exactly what this class should do just by its name
+    a(name="css")
+    h2.guideHeading CSS
+    h3.guideHeading General
+    ul.bulletList
+      li Spacing should be the same format as HTML, 2 spaces per indent, and no tabs.
+      li Selectors should have one space between their declaration and their curly bracket, the styles listed inside the brackets should be started on a new line and indented.
+        pre.codeBlock.
+          selector: {
+            style: value;
+          }
+      li There should be one empty line between a new selector and its style declarations, no more, no less.
+        pre.codeBlock.
+          selector: {
+            style: value;
+          }
+          -----one blank line-----
+          selector: {
+            style: value;
+          }
+    h3.guideHeading File Structure
+    ul.bulletlist
+      li

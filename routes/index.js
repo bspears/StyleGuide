@@ -42,6 +42,9 @@ router.get('/color', function(req, res, next){
   res.render('color', { title: 'Style Guide: Color'})
 });
 
+router.get('/standards', function(req, res, next){
+  res.render('standards', { title: 'Style Guide: Standards'})
+});
 
 
 module.exports = router;

@@ -2,7 +2,33 @@ extends layout
 
 block content
   section.guideContent
+    nav.nav.pageNav
+      ul
+        li
+          a(href="#fonts") Fonts
+        li
+          a(href="#headings") Headings
+        li
+          a(href="#text") Text
     h1.guideHeading Typography
+    a(name="fonts")
+    h2.guideHeading Font Family
+    div.example
+      p The font used in this site is "Noto Sans". The font stack should also have the fallback of "sans-serif" in case the primary font does not load.
+    pre.codeBlock.
+      body {
+        font-family: 'Noto Sans', sans-serif;
+      }
+    h2.guideHeading Formatting
+    div.example
+      p The base text formatting for the site should be as listed below.
+    pre.codeBlock.
+      body {
+        color: $darkGray;
+        font-size: 100%;
+        line-height: 1.5em;
+      }
+    a(name="headings")
     h2.guideHeading Headings
     p Heading tags should be used to define
       strong  importance only
@@ -20,6 +46,7 @@ block content
       &lt;h1&gt;Heading 1&lt;/h1&gt;
       &lt;h2&gt;Heading 2&lt;/h2&gt;
       &lt;h3&gt;Heading 3&lt;/h3&gt;
+    a(name="text")
     h2.guideHeading Text
     p Paragraphs should be separated by the &lt;p&gt; tag, there should be no use of a &lt;br&gt; tag to separate text.
     div.example

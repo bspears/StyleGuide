@@ -30,7 +30,7 @@
   width: 41.666%;
   float: left; }
 
-.grid_4 {
+.grid_4, .swatchList li {
   width: 33.333%;
   float: left; }
 
@@ -123,7 +123,8 @@ pre {
   line-height: 1.5em; }
 
 .guideHeading {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  padding-top: 1em; }
 
 .code {
   line-height: 1.2em;
@@ -152,7 +153,7 @@ pre {
 
 .example {
   padding: 1em;
-  background-color: #FFF;
+  background-color: #F3F3F3;
   color: #454545;
   text-align: left;
   border: 1px solid #F3F3F3;
@@ -171,6 +172,8 @@ pre {
   background-color: #717174; }
 
 .colorBlock {
+  color: #FFF;
+  padding: 5em 0;
   width: 100%;
   background-color: #E72; }
 
@@ -181,13 +184,30 @@ pre {
 
 .indexNav li {
   color: #FFF;
-  padding: .5em; }
+  margin: 1em; }
   .indexNav li:hover {
-    color: #000; }
+    color: #E72;
+    border-bottom: 1px dotted #F3F3F3;
+    transition: .7s; }
 
 .nav li {
   display: inline-block;
   padding: 0.5em 2em; }
+
+.pageNav {
+  background-color: #58585a;
+  color: #FFF;
+  position: fixed;
+  top: 5.8em;
+  left: 16.666%;
+  right: 0; }
+
+.bulletList {
+  margin-bottom: 1em; }
+  .bulletList li {
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 1.5em; }
 
 .swatchList li {
   display: inline-block;
@@ -198,7 +218,8 @@ pre {
   display: inline-block;
   width: 10em;
   height: 10em;
-  margin: 0; }
+  margin: 0;
+  border-radius: 20px; }
 
 .primarySwatch {
   background-color: #E72; }
@@ -216,7 +237,8 @@ pre {
   background-color: #717174; }
 
 .lightGraySwatch {
-  background-color: #F3F3F3; }
+  background-color: #F3F3F3;
+  border: 1px solid #454545; }
 
 .darkGraySwatch {
   background-color: #58585a; }

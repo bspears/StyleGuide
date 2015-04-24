@@ -146,6 +146,9 @@ h1, h2 {
   background-color: #059;
   color: #FFF; }
 
+.bgWhite {
+  background-color: #FFF; }
+
 .bgLightGray {
   background-color: #F3F3F3; }
 
@@ -168,41 +171,10 @@ h1, h2 {
     opacity: .8;
     cursor: pointer; }
 
-.primaryLarge, .accentLarge, .primarySmall, .accentSmall {
-  color: #FFF;
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0 5px 15px 0;
-  text-align: center;
-  font-weight: bold; }
-
-.primaryLarge, .accentLarge {
-  border: none;
-  padding: 12px 20px;
-  font-size: 1em; }
-
-.primarySmall, .accentSmall {
-  border: none;
-  padding: .2em; }
-
-.primaryLarge {
-  background-color: #E72;
-  border-bottom: 3px solid #da6511; }
-
-.accentLarge {
-  background-color: #059;
-  border-bottom: 3px solid #004174; }
-
-.primarySmall {
-  background-color: #E72; }
-
-.accentSmall {
-  background-color: #059; }
-
 .mainNav li {
   font-size: 1rem;
   display: inline-block;
-  padding: 2em; }
+  padding: 1em; }
   .mainNav li:hover {
     color: #E72;
     transition: .5s; }

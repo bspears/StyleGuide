@@ -1,13 +1,24 @@
 .indexNav {
   li {
     color: $white;
-    padding: .5em;
+    margin: 1em;
     &:hover {
-      color: $black;
+      color: $guidePrimaryColor;
+      border-bottom: 1px dotted $lightGray;
+      transition: .7s;
     }
   }
 }
 
 .nav {
   @include navList(inline-block, null, 2em, .5em);
+}
+
+.pageNav {
+  background-color: $darkGray;
+  color: $white;
+  position: fixed;
+  top: 5.8em;
+  left: 16.666%;
+  right: 0;
 }

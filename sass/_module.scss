@@ -11,6 +11,10 @@
   color: $white;
 }
 
+.bgWhite {
+  background-color: $white;
+}
+
 .bgLightGray {
   background-color: $lightGray;
 }
@@ -39,53 +43,6 @@
 }
 
 
-
-//Buttons
-
-%button {
-  color: $white;
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0 5px 15px 0;
-  text-align: center;
-  font-weight: bold;
-}
-
-%largeButton {
-  @extend %button;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1em;
-}
-
-%smallButton {
-  @extend %button;
-  border: none;
-  padding: .2em;
-}
-
-.primaryLarge {
-  @extend %largeButton;
-  background-color: $primaryColor;
-  border-bottom: 3px solid $primaryDark;
-}
-
-.accentLarge {
-  @extend %largeButton;
-  background-color: $accentColor;
-  border-bottom: 3px solid darken($accentColor, 7.2%);
-}
-
-.primarySmall {
-  @extend %smallButton;
-  background-color: $primaryColor;
-}
-
-.accentSmall {
-  @extend %smallButton;
-  background-color: $accentColor;
-}
-
 //nav
 
 .mainNav {
@@ -93,7 +50,7 @@
   li {
     font-size: 1rem;
     display: inline-block;
-    padding: 2em;
+    padding: 1em;
     &:hover {
       color: $primaryColor;
       transition: .5s;
